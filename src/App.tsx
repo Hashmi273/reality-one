@@ -2,7 +2,6 @@ import React, { useState } from 'react';
 import { HashRouter, Routes, Route, useLocation } from 'react-router-dom';
 import { Header } from './components/layout/Header';
 import { Footer } from './components/layout/Footer';
-import { WhatsAppFloat } from './components/layout/WhatsAppFloat';
 import { EnquiryModal } from './components/common/EnquiryModal';
 import { SiteVisitModal } from './components/common/SiteVisitModal';
 import { Toast } from './components/common/Toast';
@@ -109,7 +108,6 @@ export function App() {
         </main>
 
         <Footer />
-        <WhatsAppFloat />
 
         {/* Global Dynamic Enquiry Modal */}
         <EnquiryModal
