@@ -1,0 +1,164 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --font-serif: 'Cormorant Garamond', Garamond, Georgia, serif;
+    --font-sans: 'Montserrat', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    
+    /* Pastel Green / Botanical Theme Palette */
+    --pastel-green-50: #F4F8F5;
+    --pastel-green-100: #E6F0E9;
+    --pastel-green-200: #D0E3D5;
+    --pastel-green-300: #B2D1BC;
+    --pastel-green-400: #8EB99C;
+    --pastel-green-500: #6B9F7B;
+    --pastel-green-600: #4F805F;
+    --pastel-green-700: #386146;
+    --pastel-green-800: #264632;
+    --pastel-green-900: #193122;
+    --pastel-green-950: #0F2015;
+
+    --bg-main: #F4F8F5;
+    --bg-card: #FFFFFF;
+    --text-main: #193122;
+    --text-muted: #536B5C;
+    --border-light: #DCE7E0;
+    --border-accent: #B2D1BC;
+  }
+
+  body {
+    font-family: var(--font-sans);
+    color: var(--text-main);
+    background-color: var(--bg-main);
+    overflow-x: hidden;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  h1, h2, h3, h4, .font-serif {
+    font-family: var(--font-serif);
+    letter-spacing: -0.01em;
+  }
+
+  p, span, button, input, select, textarea, a, .font-sans {
+    font-family: var(--font-sans);
+  }
+}
+
+/* Pastel Green Aesthetic Utilities */
+.font-editorial {
+  font-family: 'Cormorant Garamond', Garamond, Georgia, serif;
+}
+
+.font-modern {
+  font-family: 'Montserrat', sans-serif;
+}
+
+.bg-pastel-main {
+  background-color: #F4F8F5;
+}
+
+.bg-pastel-card {
+  background-color: #FFFFFF;
+}
+
+.bg-pastel-soft {
+  background-color: #EAF3ED;
+}
+
+.bg-pastel-deep {
+  background-color: #1A3324;
+}
+
+.bg-pastel-dark {
+  background-color: #23412E;
+}
+
+.text-pastel-deep {
+  color: #193122;
+}
+
+.text-pastel-accent {
+  color: #386146;
+}
+
+.text-pastel-soft {
+  color: #6B9F7B;
+}
+
+.border-pastel-hairline {
+  border-color: #DCE7E0;
+}
+
+.border-pastel-accent {
+  border-color: #B2D1BC;
+}
+
+/* Pastel Green Buttons */
+.btn-pastel-primary {
+  background-color: #23412E;
+  color: #FFFFFF;
+  border: 1px solid #23412E;
+  transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.btn-pastel-primary:hover {
+  background-color: #386146;
+  border-color: #386146;
+  color: #FFFFFF;
+}
+
+.btn-pastel-outline {
+  background-color: transparent;
+  color: #193122;
+  border: 1px solid #B2D1BC;
+  transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.btn-pastel-outline:hover {
+  border-color: #23412E;
+  background-color: #E6F0E9;
+}
+
+.btn-pastel-mint {
+  background-color: #B2D1BC;
+  color: #122419;
+  border: 1px solid #9DC4A9;
+  font-weight: 600;
+  transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.btn-pastel-mint:hover {
+  background-color: #9EC6AA;
+  border-color: #8EB99C;
+}
+
+/* Frosted Glass with Pastel Tint */
+.glass-pastel {
+  background: rgba(244, 248, 245, 0.92);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border-bottom: 1px solid rgba(220, 231, 224, 0.8);
+}
+
+.glass-pastel-dark {
+  background: rgba(25, 49, 34, 0.92);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* Custom Pastel Green Scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #F4F8F5;
+}
+::-webkit-scrollbar-thumb {
+  background: #C4DBD0;
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #8EB99C;
+}
