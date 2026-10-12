@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import logoPng from '../../assets/logo.png';
 
 interface BrandLogoProps {
   variant?: 'light' | 'dark' | 'imageOnly' | 'full';
@@ -25,7 +26,7 @@ export const BrandLogo: React.FC<BrandLogoProps> = ({
       {/* 3D Metallic Emblem from Logo */}
       <div className="relative overflow-hidden shrink-0 flex items-center justify-center">
         <img
-          src="/logo.png"
+          src={logoPng}
           alt="Realty One"
           className={`${imageSizes[size]} object-contain drop-shadow-sm transition-transform duration-300 group-hover:scale-105`}
         />

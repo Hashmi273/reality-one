@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { BrowserRouter, Routes, Route, useLocation } from 'react-router-dom';
+import { HashRouter, Routes, Route, useLocation } from 'react-router-dom';
 import { Header } from './components/layout/Header';
 import { Footer } from './components/layout/Footer';
 import { WhatsAppFloat } from './components/layout/WhatsAppFloat';
@@ -64,7 +64,7 @@ export function App() {
   };
 
   return (
-    <BrowserRouter>
+    <HashRouter>
       <ScrollToTop />
       <div className="flex flex-col min-h-screen bg-[#F4F8F5] text-[#193122] selection:bg-[#B2D1BC]/50 selection:text-[#193122]">
         <Header onOpenEnquiry={() => handleOpenEnquiry()} />
@@ -86,7 +86,7 @@ export function App() {
               element={
                 <PropertyDetailPage 
                   onOpenEnquiry={handleOpenEnquiry} 
-                  onOpenSiteVisit={handleOpenSiteVisit}
+                  onOpenSiteVisit={handleOpenSiteVisit} 
                   onSuccessToast={handleEnquirySuccess} 
                 />
               } 
@@ -136,7 +136,7 @@ export function App() {
           submessage={toastSub}
         />
       </div>
-    </BrowserRouter>
+    </HashRouter>
   );
 }
 
